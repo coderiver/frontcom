@@ -1,0 +1,152 @@
+@import "base";
+// =======Sprites
+// .whatever{
+// 	@include sized-sprite($icons, badge_hit);
+// 	@include retina{
+// 		@include sized-sprite($icons, badge_new);
+// 	}
+// }
+// =======animation example
+// @include keyframes(rotate) {
+//    from {
+//       @include rotate(0);
+//    }
+//    to {
+//       @include rotate(360);
+//    }
+// }
+// body:hover{
+// 	@include animation(rotate 200s linear infinite);
+// }
+// ========gradient example
+// body{
+// @include background-image(linear-gradient(#232323, #5c5c5c));
+// }
+
+
+
+*{margin:0;padding:0;-webkit-text-size-adjust: none; }
+body{
+	font: {
+	    family: Arial,sans-serif;
+	    weight: normal;
+	    size: 12px;
+	  	}
+	line-height:1.4;
+}
+// resets
+a img,fieldset{
+	border:none;
+	}
+a{
+	color:#00919e;
+	&:hover{
+		text-decoration:none;
+	}
+}
+header, nav, footer{display: block;}
+// common styles
+
+$segoe : "Segoe UI", Arial, sans-serif;
+
+.header{
+	padding:41px 0 0;
+	margin:0 auto;
+	width: 988px;
+	.logo{
+		@include sized-sprite($icons, 'logo');
+		@include hide-text;
+		display: block;
+		float: left;
+		margin-top: 5px;
+		a{
+			display: block;
+			height: 100%; 
+		}
+	}
+	.contact-phone{float: right;}
+}
+.nav{
+	display: inline-block;
+	width: 100%;
+	font-family: $segoe;
+	padding:48px 0 25px;
+	clear: both;
+	li{
+		list-style: none;
+		float: left;
+		margin-right: 27px;
+		a{
+			display: block;
+			color: #29292a;
+			font-size: 16px;
+			text-transform: uppercase;
+			border-bottom: 1px solid #d1d6da;
+			line-height: 1;
+			text-decoration: none;
+			&:hover{
+				background: #00a4e4;
+				color: #fff;
+				margin: -7px -11px;
+				padding: 7px 11px;
+				text-decoration: underline;
+			}
+		}
+	}
+	.active a{
+		color:#00a4e4;
+		border-color:#d1e9f8;
+	}
+}
+.contact-phone{
+	font-size: 24px;
+	color: #acafb1;
+	font-family: $segoe;
+	font-weight: normal;
+	line-height:1; 
+	span{
+		color: #29292a; 
+	}
+}
+
+.banner{
+	background: #2a3952;
+	height: 269px;
+	padding:47px 0 0;
+	margin-bottom: 25px;
+	strong{
+		color: #fff;
+		font-size: 81px;
+		font-family: $segoe;
+		font-weight: normal;
+		font-weight: lighter;
+		line-height: 0.8;
+		margin: 0 0 35px -7px;
+		display: block;
+	}
+	p{
+		border-left:3px solid #00a4e4;
+		line-height: 35px;
+		font-size: 18px;
+		font-family: $segoe;
+		font-weight: bold;
+		color: #fff;
+		padding-left:9px; 
+	}
+}
+.in{
+	margin: 0 auto;
+	width: 988px;
+}
+
+.main{
+	margin: 0 auto;
+	width: 988px;
+	h1{
+		color: #29292a;
+		font-family: $segoe;
+		font-size: 35px;
+		font-weight: normal;
+		font-weight: lighter;
+	}
+}
