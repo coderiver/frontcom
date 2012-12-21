@@ -1,1 +1,144 @@
+
+
+
+
 @import "base";
+.activity{
+		padding:35px 0 0;
+		margin:0 -10px; 
+	li{
+		display: inline-block;
+		list-style: none;
+		width: 313px;
+		padding:0 10px;
+		height:55px;
+		margin-bottom:25px; 
+		position: relative;
+		a{
+			position:absolute;
+			width: 314px;
+			top:0;
+			left: 10px;
+			height: 55px;
+			display: block;
+			text-decoration: none;
+			&:hover{
+				border:1px solid $blue;
+				top:-22px;
+				left: 9px;
+				padding:21px  0 26px;
+				.activity__drop{
+					display: block;
+				}
+				.activity__name span{border:0;}
+				.icon-lan{@include sized-sprite($icons, 'i-lan1');}
+				.icon-wireless-net{@include sized-sprite($icons, 'i-wireless-net1');}
+				.icon-business{@include sized-sprite($icons, 'i-business1');}
+				.icon-wan{@include sized-sprite($icons, 'i-wan1');}
+				.icon-scn{@include sized-sprite($icons, 'i-scn1');}
+				.icon-infrastructure{@include sized-sprite($icons, 'i-infrastructure1');}
+				.icon-dpc{@include sized-sprite($icons, 'i-dpc1');}
+				.icon-ip{@include sized-sprite($icons, 'i-ip1');}
+				.icon-serv{@include sized-sprite($icons, 'i-serv1');}
+				.icon-www{@include sized-sprite($icons, 'i-www1');}
+				.icon-cam{@include sized-sprite($icons, 'i-cam1');}
+				.icon-cloud{@include sized-sprite($icons, 'i-cloud1');}
+			}
+		}
+	}
+	.activity__name{
+		display: table-cell;
+		margin-left: 100px;
+		font-size: 16px;
+		font-family: $segoe;
+		color: $blue;
+		width: 200px;
+		vertical-align: middle;
+		span{
+			border-bottom:1px dotted;
+		}
+	}
+	.activity__drop{
+		display: none;
+		background: $blue; 
+		position: absolute;
+		top:100%;
+		left:0;
+		font-family: $segoe;
+		font-size: 14px;
+		z-index:5;
+		color:#fff;
+		padding:15px 22px 20px;;
+		cursor: default;
+		margin:0 -1px;
+		line-height:1.64;  
+	}
+	.activity__img{
+		display: table-cell;
+		width: 83px;
+		padding-left: 25px;
+		vertical-align: middle;
+		span{
+			display: inline-block;
+			vertical-align: middle;
+
+		}
+	}
+	.icon-lan{@include sized-sprite($icons, 'i-lan');}
+	.icon-wireless-net{@include sized-sprite($icons, 'i-wireless-net');}
+	.icon-business{@include sized-sprite($icons, 'i-business');}
+	.icon-wan{@include sized-sprite($icons, 'i-wan');}
+	.icon-scn{@include sized-sprite($icons, 'i-scn');}
+	.icon-infrastructure{@include sized-sprite($icons, 'i-infrastructure');}
+	.icon-dpc{@include sized-sprite($icons, 'i-dpc');}
+	.icon-ip{@include sized-sprite($icons, 'i-ip');}
+	.icon-serv{@include sized-sprite($icons, 'i-serv');}
+	.icon-www{@include sized-sprite($icons, 'i-www');}
+	.icon-cam{@include sized-sprite($icons, 'i-cam');}
+	.icon-cloud{@include sized-sprite($icons, 'i-cloud');}
+}
+
+.slider{
+	position: relative;
+	.slider__next{
+		position: absolute;
+		margin-top: -14px;
+		right:-47px;
+		top:50%;
+		cursor: pointer;
+		@include sized-sprite($icons, 'arr-right');
+	}
+	.slider__prev{
+		position: absolute;
+		margin-top: -14px;
+		left:-47px;
+		top:50%;
+		cursor: pointer;
+		@include sized-sprite($icons, 'arr-left');
+	}
+	.slider__slides{
+		height: 125px;
+		overflow: hidden;
+		position: relative;
+	}
+	.slider__slide{
+		text-align: center;
+		width: 988px;
+	}
+}
+
+.clients-logo{
+	vertical-align: middle;
+	line-height: 50px;
+	padding:34px 0 0; 
+	a{
+		margin:0 20px; 
+		position: relative;
+		display: inline-block;
+		&:first-child{margin-left:0 }
+		&:last-child{margin-right: 0;}
+	}
+	img{
+		vertical-align: middle;
+	}
+}

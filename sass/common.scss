@@ -22,15 +22,17 @@
 // body{
 // @include background-image(linear-gradient(#232323, #5c5c5c));
 // }
-
+$segoe : "Segoe UI", Arial, sans-serif;
+$blue : #00a4e4;
+$gray : #29292a;
 
 
 *{margin:0;padding:0;-webkit-text-size-adjust: none; }
 body{
 	font: {
-	    family: Arial,sans-serif;
+	    family: $segoe;
 	    weight: normal;
-	    size: 12px;
+	    size: 14px;
 	  	}
 	line-height:1.4;
 }
@@ -39,7 +41,7 @@ a img,fieldset{
 	border:none;
 	}
 a{
-	color:#00919e;
+	color:$blue;
 	&:hover{
 		text-decoration:none;
 	}
@@ -47,7 +49,7 @@ a{
 header, nav, footer{display: block;}
 // common styles
 
-$segoe : "Segoe UI", Arial, sans-serif;
+
 
 .header{
 	padding:41px 0 0;
@@ -56,7 +58,6 @@ $segoe : "Segoe UI", Arial, sans-serif;
 	.logo{
 		@include sized-sprite($icons, 'logo');
 		@include hide-text;
-		display: block;
 		float: left;
 		margin-top: 5px;
 		a{
@@ -78,14 +79,14 @@ $segoe : "Segoe UI", Arial, sans-serif;
 		margin-right: 27px;
 		a{
 			display: block;
-			color: #29292a;
+			color: $gray;
 			font-size: 16px;
 			text-transform: uppercase;
 			border-bottom: 1px solid #d1d6da;
 			line-height: 1;
 			text-decoration: none;
 			&:hover{
-				background: #00a4e4;
+				background: $blue;
 				color: #fff;
 				margin: -7px -11px;
 				padding: 7px 11px;
@@ -94,7 +95,7 @@ $segoe : "Segoe UI", Arial, sans-serif;
 		}
 	}
 	.active a{
-		color:#00a4e4;
+		color:$blue;
 		border-color:#d1e9f8;
 	}
 }
@@ -105,7 +106,7 @@ $segoe : "Segoe UI", Arial, sans-serif;
 	font-weight: normal;
 	line-height:1; 
 	span{
-		color: #29292a; 
+		color: $gray; 
 	}
 }
 
@@ -113,7 +114,7 @@ $segoe : "Segoe UI", Arial, sans-serif;
 	background: #2a3952;
 	height: 269px;
 	padding:47px 0 0;
-	margin-bottom: 25px;
+	margin-bottom: 33px;
 	strong{
 		color: #fff;
 		font-size: 81px;
@@ -125,7 +126,7 @@ $segoe : "Segoe UI", Arial, sans-serif;
 		display: block;
 	}
 	p{
-		border-left:3px solid #00a4e4;
+		border-left:3px solid $blue;
 		line-height: 35px;
 		font-size: 18px;
 		font-family: $segoe;
@@ -143,10 +144,108 @@ $segoe : "Segoe UI", Arial, sans-serif;
 	margin: 0 auto;
 	width: 988px;
 	h1{
-		color: #29292a;
+		color: $gray;
 		font-family: $segoe;
 		font-size: 35px;
 		font-weight: normal;
 		font-weight: lighter;
+		margin:0 0 0 -12px; 
+		line-height: 1;
+		a{
+			text-decoration: none;
+			color: $gray;
+			display: inline-block;
+			padding:1px 10px 6px;
+			&:hover{
+				background: $blue;
+				color:#fff;
+			}
+		}
+	}
+}
+
+.footer{
+	border-top:1px solid #dcdedf;
+	margin: 0 auto;
+	width: 988px;
+	padding:21px 0 167px; 
+	.footer__top{
+		display: inline-block;
+		width: 100%;
+		margin-bottom: 63px;
+	}
+	.footer__nav{
+		float: left;
+		li{
+			display: inline-block;
+			list-style: none;
+			font-size: 13px;
+			margin-right: 43px;
+		}
+		a{
+			color: $gray;
+		}
+	}
+	.footer__top-link{
+		float: right;
+		text-decoration: none;
+		border-bottom: 1px dotted;
+		position: relative;
+		font-size: 13px;
+		margin-top: 2px;
+		&:hover{border-color:transparent;}
+	}
+	.arr-top{
+		@include sized-sprite($icons, 'arr-top');
+		display: block;
+		position: absolute;
+		left:-25px;
+		top: 0; 
+	}
+	.footer__bottom{
+		display: inline-block;
+		width: 100%;
+	}
+	.footer__left{
+		float: left;
+		font-size: 13px;
+		span{
+			display: block;
+			margin-bottom: 4px;
+		}
+	}
+	.contact-phone_sm{
+		font-size: 18px;
+		margin-bottom: 12px;
+		span{display: inline;}
+		@extend .contact-phone;
+	}
+	.footer__right{
+		text-align: right;
+		float: right;
+		span{
+			display: block;
+			font-size: 12px;
+			color: #a5abaf; 
+			}
+		p{
+			font-size: 11px;
+			color: #959ca1; 
+		}
+	}
+	.dotted{
+		border-bottom: 1px dotted #dcdedf; 
+	}
+}
+.logo-gray{
+	@include sized-sprite($icons, 'logo_gray');
+	@include hide-text;
+	display: inline-block;
+	position: relative;
+	top:-6px;
+	margin-bottom: 24px;
+	a{
+		display: block;
+		height: 100%; 
 	}
 }
