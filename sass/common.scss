@@ -25,7 +25,7 @@
 $segoe : "Segoe UI", Arial, sans-serif;
 $blue : #00a4e4;
 $gray : #29292a;
-
+%block{margin-bottom: 60px;}
 
 *{margin:0;padding:0;-webkit-text-size-adjust: none; }
 body{
@@ -57,7 +57,7 @@ header, nav, footer{display: block;}
 	width: 988px;
 	.logo{
 		@include sized-sprite($icons, 'logo');
-		@include hide-text;
+		@extend %hide-text;
 		float: left;
 		margin-top: 5px;
 		a{
@@ -162,6 +162,18 @@ header, nav, footer{display: block;}
 			}
 		}
 	}
+	h2{}
+	h3{
+		font-size:16px;
+		color:$blue;
+		text-transform: uppercase;
+		font-weight: lighter;
+		margin-bottom: 12px;
+		a{
+			text-decoration: underline;
+			&:hover{text-decoration: none;}
+		}
+	}
 }
 
 .footer{
@@ -239,7 +251,7 @@ header, nav, footer{display: block;}
 }
 .logo-gray{
 	@include sized-sprite($icons, 'logo_gray');
-	@include hide-text;
+	@extend %hide-text;
 	display: inline-block;
 	position: relative;
 	top:-6px;
