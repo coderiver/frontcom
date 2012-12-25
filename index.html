@@ -7,6 +7,7 @@
 	<link rel="stylesheet" media="screen" href="css/screen.css" >
 	<script src="js/html5.js"></script>
 	<script src="js/jquery.tools.min.js"></script>
+	<script src="js/jquery.carouFredSel-6.1.0.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
@@ -32,9 +33,16 @@
 
 <!-- BEGIN .banner -->
 <div class="banner">
+	<img src="img/banner-001.jpg" alt="" class="banner__img">
 	<div class="in">
+
 		<strong>Frontline <br>Communications</strong>
 		<p>ПЕРЕДОВЫЕ ТЕХНОЛОГИИ В ПОМОЩЬ</p>
+		<ul class="banner__links">
+			<li><a href="#">НОВЫЕ ВОЗМОЖНОСТИ <br>ДЛЯ ВАШЕГО БИСНЕСА<span class="arr-right"></span></a></li>
+			<li><a href="#">ПЕРЕДОВЫЕ ТЕХНОЛОГИИ <br>В ПОМОЩЬ<span class="arr-right"></span></a></li>
+			<li><a href="#">СТРАТЕГИИ РАЗВИТИЯ <br>ВЫБОР ПРОФЕССИОНАЛОВ<span class="arr-right"></span></a></li>
+		</ul>
 	</div>
 </div>
 <!-- END .banner -->
@@ -133,39 +141,34 @@
 	</div>
 	<!-- END .activity-block -->
 
-	<!-- BEGIN  -->
-	<div class="">
+	<!-- BEGIN .clients-block -->
+	<div class="clients-block">
 		<h1><a href="#">Клиенты</a></h1>
-		<div class="slider" id="clients">
+		<div class="slider clients" id="clients">
 			<div class="slider__next"></div>
 			<div class="slider__prev"></div>
-			<div class="slider__holder">
-				<div class="slider__slides">
-					<div class="slider__slide">
-						<div class="clients-logo">
-							<a href="#"><img src="img/logo-akado.jpg" alt=""></a>
-							<a href="#" style="top:-8px;"><img src="img/logo-gazprom.jpg" alt=""></a>
-							<a href="#"><img src="img/logo-rostelecom.jpg" alt=""></a>
-							<a href="#"><img src="img/logo-mts.jpg" alt=""></a>
-							<a href="#"><img src="img/logo-troika.jpg" alt=""></a>
-							<a href="#"><img src="img/logo-absolut.jpg" alt=""></a>
-						</div>
-					</div>
-					<div class="slider__slide">
-						<div class="clients-logo">
-							<a href="#"><img src="img/logo-akado.jpg" alt=""></a>
-							<a href="#" style="top:-8px;"><img src="img/logo-gazprom.jpg" alt=""></a>
-							<a href="#"><img src="img/logo-rostelecom.jpg" alt=""></a>
-							<a href="#"><img src="img/logo-mts.jpg" alt=""></a>
-							<a href="#"><img src="img/logo-troika.jpg" alt=""></a>
-							<a href="#"><img src="img/logo-absolut.jpg" alt=""></a>
-						</div>
-					</div>
-				</div>
+			<div class="slider__slides">
+				<div class="slider__slide"><a href="#" class="clients-logo"><img src="img/logo-akado.jpg" alt=""></a></div>
+				<div class="slider__slide"><a href="#"  class="clients-logo" style="top:-8px;"><img src="img/logo-gazprom.jpg" alt=""></a></div>
+				<div class="slider__slide"><a href="#" class="clients-logo"><img src="img/logo-rostelecom.jpg" alt=""></a></div>
+				<div class="slider__slide"><a href="#" class="clients-logo"><img src="img/logo-mts.jpg" alt=""></a></div>
+				<div class="slider__slide"><a href="#" class="clients-logo"><img src="img/logo-troika.jpg" alt=""></a></div>
+				<div class="slider__slide"><a href="#" class="clients-logo"><img src="img/logo-absolut.jpg" alt=""></a></div>
+				<div class="slider__slide"><a href="#" class="clients-logo"><img src="img/logo-dorx.jpg" alt=""></a></div>
+				<div class="slider__slide"><a href="#" class="clients-logo"><img src="img/logo-perekr.jpg" alt=""></a></div>
+
+				<div class="slider__slide"><a href="#" class="clients-logo"><img src="img/logo-akado.jpg" alt=""></a></div>
+				<div class="slider__slide"><a href="#"  class="clients-logo" style="top:-8px;"><img src="img/logo-gazprom.jpg" alt=""></a></div>
+				<div class="slider__slide"><a href="#" class="clients-logo"><img src="img/logo-rostelecom.jpg" alt=""></a></div>
+				<div class="slider__slide"><a href="#" class="clients-logo"><img src="img/logo-mts.jpg" alt=""></a></div>
+				<div class="slider__slide"><a href="#" class="clients-logo"><img src="img/logo-troika.jpg" alt=""></a></div>
+				<div class="slider__slide"><a href="#" class="clients-logo"><img src="img/logo-absolut.jpg" alt=""></a></div>
+				<div class="slider__slide"><a href="#" class="clients-logo"><img src="img/logo-dorx.jpg" alt=""></a></div>
+				<div class="slider__slide"><a href="#" class="clients-logo"><img src="img/logo-perekr.jpg" alt=""></a></div>
 			</div>
 		</div>
 	</div>
-	<!-- END  -->
+	<!-- END .clients-block -->
 
 	<div class="link_block">
 		<img src="img/tie.png" alt="">
@@ -219,24 +222,49 @@
 	<div>
 		<h1><a href="#">Реализованные проекты</a></h1>
 		<!-- BEGIN .slider -->
-		<div class="slider" id="progects">
+		<div class="slider progects" id="progects">
 			<div class="slider__next"></div>
 			<div class="slider__prev"></div>
 			<div class="slider__holder">
 				<!-- BEGIN .slider__slides -->
 				<div class="slider__slides">
 					<div class="slider__slide">
-						<!--  -->
 						<div class="progect">
+							<!-- BEGIN .progect__item -->
 							<div class="progect__item">
 								<div class="progect__img">
-									<img src="http://placekitten.com/316/107" alt="">
+									<img src="http://flickholdr.com/316/107/office" alt="">
 								</div>
 								<div class="progect__inf">
-									<h2><a href="#"></a></h2>
-									<p></p>
+									<h2><a href="#">Проект Angry Frontcom</a></h2>
+									<p>Успешный проект онлайн стратегии Angry Frontcom. Проект реализован совместно с компанией Rovio. Платформы Windows OS, Android, iOS</p>
 								</div>
 							</div>
+							<!-- END .progect__item  -->
+
+							<!-- BEGIN .progect__item -->
+							<div class="progect__item">
+								<div class="progect__img">
+									<img src="http://flickholdr.com/316/107/office" alt="">
+								</div>
+								<div class="progect__inf">
+									<h2><a href="#">Компания Фронтком начала разработку собственной платформы</a></h2>
+									<p>Первая версия платформы FrontOS получила возможность синхронизации всех данных со всех устройсв под одной учетной записью. Дальнейшие планы по разработке включают Распознование речи и настроения пользователя.</p>
+								</div>
+							</div>
+							<!-- END .progect__item  -->
+
+							<!-- BEGIN .progect__item -->
+							<div class="progect__item progect__item_last">
+								<div class="progect__img">
+									<img src="http://flickholdr.com/316/107/office" alt="">
+								</div>
+								<div class="progect__inf">
+									<h2><a href="#">Автоматическая система контроля проектов</a></h2>
+									<p>Frontcom Automatic позволяет сканировать системы и выявляет баги. Система работет удаленно и не требует постоянного контроля. Параллельно идет разработка новых фич.</p>
+								</div>
+							</div>
+							<!-- END .progect__item  -->
 						</div>
 					</div>
 				</div>

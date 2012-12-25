@@ -55,6 +55,9 @@ header, nav, footer{display: block;}
 	padding:41px 0 0;
 	margin:0 auto;
 	width: 988px;
+	@include respond-to(wide) {
+		width:1324px;
+	}
 	.logo{
 		@include sized-sprite($icons, 'logo');
 		@extend %hide-text;
@@ -112,9 +115,15 @@ header, nav, footer{display: block;}
 
 .banner{
 	background: #2a3952;
-	height: 269px;
-	padding:47px 0 0;
+	height: 316px;
+	//padding:47px 0 0;
 	margin-bottom: 33px;
+	overflow: hidden;
+	position: relative;
+	.in{
+		position: relative;
+		padding-top:47px 
+	}
 	strong{
 		color: #fff;
 		font-size: 81px;
@@ -134,15 +143,63 @@ header, nav, footer{display: block;}
 		color: #fff;
 		padding-left:9px; 
 	}
+	.banner__img{
+		position: absolute;
+		margin-left:-1033px;
+		left: 50%; 
+	}
 }
+.banner__links{
+	position: absolute;
+	width: 316px;
+	top:0;
+	right: 10px;
+
+	li{
+		margin-top: 20px;
+		list-style: none;
+		font-size: 18px;
+		color: $blue;
+	}
+	a{
+		border:3px solid $blue;
+		width: 270px;
+		padding: 10px 20px;
+		height: 52px;
+		text-decoration: none;
+		display: block;
+		position: relative;
+		&:hover{
+			color: #fff;
+			border-color:#fff;
+			.arr-right{
+				@include sized-sprite($icons, 'arr-right3');
+			}
+		}
+	}
+	.arr-right{
+		position: absolute;
+		top:50%;
+		margin-top:-19px; 
+		right:14px;
+		@include sized-sprite($icons, 'arr-right2');
+	}
+}
+
 .in{
 	margin: 0 auto;
 	width: 988px;
+	@include respond-to(wide) {
+		width:1324px;
+	}
 }
 
 .main{
 	margin: 0 auto;
 	width: 988px;
+	@include respond-to(wide) {
+		width:1324px;
+	}
 	h1{
 		color: $gray;
 		font-family: $segoe;
@@ -180,6 +237,9 @@ header, nav, footer{display: block;}
 	border-top:1px solid #dcdedf;
 	margin: 0 auto;
 	width: 988px;
+	@include respond-to(wide) {
+		width:1324px;
+	}
 	padding:21px 0 167px; 
 	.footer__top{
 		display: inline-block;

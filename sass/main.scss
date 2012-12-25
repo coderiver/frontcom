@@ -1,8 +1,6 @@
-
-
-
-
 @import "base";
+
+.activity-block{margin-bottom: 25px;}
 .activity{
 		padding:35px 0 0;
 		margin:0 -10px; 
@@ -100,50 +98,50 @@
 
 .slider{
 	position: relative;
-	.slider__next{
+	%slider-arr{
 		position: absolute;
-		margin-top: -14px;
-		right:-47px;
-		top:50%;
 		cursor: pointer;
+		top:40px;
+	}
+	.slider__next{
+		@extend %slider-arr;
+		right:-47px;
 		@include sized-sprite($icons, 'arr-right');
+		&:hover{
+			@include sized-sprite($icons, 'arr-right4');
+		}
 	}
 	.slider__prev{
-		position: absolute;
-		margin-top: -14px;
+		@extend %slider-arr;
 		left:-47px;
-		top:50%;
-		cursor: pointer;
 		@include sized-sprite($icons, 'arr-left');
-	}
-	.slider__holder{
-		overflow: hidden;
-		position: relative;
-		width: 988px;
-		height:125px; 
-	}
-	.slider__slides{
-		position: absolute;
-    	width: 20000em;
+		&:hover{
+			@include sized-sprite($icons, 'arr-left4');
+		}
 	}
 	.slider__slide{
-		text-align: center;
-		width: 988px;
 		float: left;
 	}
 }
 
-.clients-logo{
-	vertical-align: middle;
-	line-height: 50px;
-	padding:34px 0 0; 
-	a{
-		margin:0 20px; 
-		position: relative;
-		display: inline-block;
-		&:first-child{margin-left:0 }
-		&:last-child{margin-right: 0;}
+
+
+.clients{
+	.slider__slide{
+		text-align: center;
+		height:125px;
+		line-height: 125px;
+		margin:0 20px;
+		}
+	.slider__next, .slider__prev{
+		margin-top: -14px;
+		top:50%;
 	}
+}
+.clients-logo{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
 	img{
 		vertical-align: middle;
 	}
@@ -156,6 +154,7 @@
 	height: 107px;
 	line-height: 102px;
 	padding: 0 0 0 35px;
+	margin-bottom: 50px;
 	img{
 		vertical-align: middle;
 		margin-right: 27px;
@@ -168,6 +167,7 @@
 		display: inline-block;
 		margin: -10px 48px 0 0;
 		position: relative;
+		line-height: 50px;
 	}
 	p{
 		display: inline-block;
@@ -193,7 +193,6 @@
 		&:hover{
 			img{
 				@extend %gray-zero;
-				opacity:1; 
 			}
 		}
 	}
@@ -205,6 +204,11 @@
 		display: inline-block;
 		width: 100%;
 		margin-bottom: 30px;
+		&:hover{
+			.news__date{
+				color:$blue;
+			}
+		}
 	}
 	.news__date{
 		float: left;
@@ -231,6 +235,12 @@
 	font-size: 12px;
 	margin: 23px 0 0 40px;
 	display: inline-block;
+	&:hover{
+		text-decoration: underline;
+		.link-arr{
+			@include sized-sprite($icons, 'arr-bottom2');
+		}
+	}
 }
 
 .link-arr{
@@ -240,4 +250,46 @@
 	left: -38px;
 	top: -6px;
 }
-.main .l{@extend %block;}
+.main .l{margin-bottom: 50px;}
+.progects{
+	margin-top: 22px;
+	@extend %block;
+	.slider__holder{
+		height: 400px;
+	}
+}
+.progect{
+	.progect__item{
+		margin:0 20px 0 0;
+		float: left;
+		width: 316px;
+		&:last-child{margin-right: 0;}
+	}
+	.progect__item_last{margin-right: 0;}
+	.progect__img{
+		height:107px;
+		width: 316px;
+		overflow: hidden; 
+		img{
+			vertical-align: top;
+		}
+	}
+	.progect__inf{
+		color: #fff;
+		background: $blue; 
+		padding: 20px 32px 30px;
+		h2{
+			font-size: 21px;
+			color: #fff;
+			font-weight: lighter;
+			margin-bottom: 30px;
+			line-height: 1.15;
+			a{color: #fff;}
+		}
+		p{
+			font-size: 13px;
+			line-height: 1.5;
+		}
+	}
+}
+
