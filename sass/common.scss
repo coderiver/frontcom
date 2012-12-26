@@ -117,7 +117,7 @@ header, nav, footer{display: block;}
 	background: #2a3952;
 	height: 316px;
 	//padding:47px 0 0;
-	margin-bottom: 33px;
+	margin-bottom: 12px;
 	overflow: hidden;
 	position: relative;
 	.in{
@@ -133,6 +133,11 @@ header, nav, footer{display: block;}
 		line-height: 0.8;
 		margin: 0 0 35px -7px;
 		display: block;
+		min-height: 114px; 
+		a{
+			text-decoration: none;
+			color:#fff;
+		}
 	}
 	p{
 		border-left:3px solid $blue;
@@ -141,12 +146,37 @@ header, nav, footer{display: block;}
 		font-family: $segoe;
 		font-weight: bold;
 		color: #fff;
-		padding-left:9px; 
+		padding-left:9px;
+		text-transform: uppercase;
+		a{
+			text-decoration: none;
+			color: #fff;
+			&:hover{text-decoration: underline;}
+		}
 	}
 	.banner__img{
 		position: absolute;
 		margin-left:-1033px;
 		left: 50%; 
+	}
+	.title-arr{
+		position: absolute;
+		@include sized-sprite($icons, 'arr-left5');
+		top:4px;
+		left: -70px;
+	}
+}
+.banner_sub{
+	@extend .banner;
+	strong{
+		font-size: 60px;
+		margin-top: 17px;
+		position: relative;
+	}
+	p{
+		font-size: 15px;
+		line-height: 32px;
+		padding-left: 20px;
 	}
 }
 .banner__links{
