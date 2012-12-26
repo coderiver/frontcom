@@ -98,6 +98,7 @@
 
 .slider{
 	position: relative;
+	margin:0 -10px;
 	%slider-arr{
 		position: absolute;
 		cursor: pointer;
@@ -258,14 +259,15 @@
 		height: 400px;
 	}
 }
+.progects{
+
+	margin:22px -10px 60px;
+
+}
 .progect{
-	.progect__item{
-		margin:0 20px 0 0;
-		float: left;
-		width: 316px;
-		&:last-child{margin-right: 0;}
-	}
-	.progect__item_last{margin-right: 0;}
+	margin:0  10px;
+	float: left;
+	width: 316px;
 	.progect__img{
 		height:107px;
 		width: 316px;

@@ -5,11 +5,11 @@ $(document).ready(function() {
 	//	prev:'#clients .slider__prev',
 	//	circular:true
 	//});
-	$('#progects .slider__holder').scrollable({
-		next:'#progects .slider__next',
-		prev:'#progects .slider__prev',
-		circular:true
-	});
+	//$('#progects .slider__holder').scrollable({
+	//	next:'#progects .slider__next',
+	//	prev:'#progects .slider__prev',
+	//	circular:true
+	//});
 
 
 	$('#clients .slider__slides').carouFredSel({
@@ -18,5 +18,13 @@ $(document).ready(function() {
 		prev: '#clients .slider__prev',
 		next: '#clients .slider__next'
 	});
+
+	$('#progects .slider__slides').carouFredSel({
+		width: '100%',
+		auto: false,
+		prev: '#progects .slider__prev',
+		next: '#progects .slider__next'
+	});
+
 
 });
