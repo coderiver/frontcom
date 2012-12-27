@@ -2,7 +2,7 @@
 
 // responsive
 $break-small: 500px;
-$break-large: 1418px;
+$break-large: 1438px;
 @mixin respond-to($media) {
   @if $media == pda {
     @media only screen and (max-width: $break-small) { @content; }

@@ -1,8 +1,21 @@
+@charset "IBM866";
 .header .logo, .logo-gray { font: 0/0 a; text-shadow: none; color: transparent; }
+
+@font-face { font-family: 'Segoe'; src: url("fonts/segoeui.eot"); src: local("☺"), url("fonts/segoeui.woff") format("woff"), url("fonts/segoeui.ttf") format("truetype"), url("fonts/segoeui.svg") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'Segoe_b'; src: url("fonts/segoeuib.eot"); src: local("☺"), url("fonts/segoeuib.woff") format("woff"), url("fonts/segoeuib.ttf") format("truetype"), url("fonts/segoeuib.svg") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'Segoe_i'; src: url("fonts/segoeuii.eot"); src: local("☺"), url("fonts/segoeuii.woff") format("woff"), url("fonts/segoeuii.ttf") format("truetype"), url("fonts/segoeuii.svg") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'Segoe_l'; src: url("fonts/segoeuil.eot"); src: local("☺"), url("fonts/segoeuil.woff") format("woff"), url("fonts/segoeuil.ttf") format("truetype"), url("fonts/segoeuil.svg") format("svg"); font-weight: lighter; font-style: normal; }
+
+@font-face { font-family: 'Segoe_bi'; src: url("fonts/segoeuiz.eot"); src: local("☺"), url("fonts/segoeuiz.woff") format("woff"), url("fonts/segoeuiz.ttf") format("truetype"), url("fonts/segoeuiz.svg") format("svg"); font-weight: normal; font-style: normal; }
+
+@font-face { font-family: 'Segoe_sb'; src: url("fonts/seguisb.eot"); src: local("☺"), url("fonts/seguisb.woff") format("woff"), url("fonts/seguisb.ttf") format("truetype"), url("fonts/seguisb.svg") format("svg"); font-weight: normal; font-style: normal; }
 
 * { margin: 0; padding: 0; -webkit-text-size-adjust: none; }
 
-body { font-family: "Segoe UI", Arial, sans-serif; font-weight: normal; font-size: 14px; line-height: 1.4; }
+body { font-family: Segoe; font-weight: normal; font-size: 14px; line-height: 1.4; }
 
 a img, fieldset { border: none; }
 
@@ -12,61 +25,95 @@ a:hover { text-decoration: none; }
 header, nav, footer { display: block; }
 
 .header { padding: 41px 0 0; margin: 0 auto; width: 988px; }
-@media only screen and (min-width: 1418px) { .header { width: 1324px; } }
-.header .logo { background: url('../img/icons-s34db1907ee.png') 0 0 no-repeat; width: 188px; height: 28px; float: left; margin-top: 5px; }
+@media only screen and (min-width: 1438px) { .header { width: 1324px; } }
+.header .logo { background: url('../img/icons-s0a2c45dfb9.png') 0 0 no-repeat; width: 188px; height: 28px; float: left; margin-top: 5px; }
 .header .logo a { display: block; height: 100%; }
 .header .contact-phone, .header .footer .contact-phone_sm, .footer .header .contact-phone_sm { float: right; }
 
-.nav { display: inline-block; width: 100%; font-family: "Segoe UI", Arial, sans-serif; padding: 48px 0 25px; clear: both; }
+.nav { display: inline-block; width: 100%; padding: 48px 0 25px; clear: both; }
 .nav li { list-style: none; float: left; margin-right: 27px; }
 .nav li a { display: block; color: #29292a; font-size: 16px; text-transform: uppercase; border-bottom: 1px solid #d1d6da; line-height: 1; text-decoration: none; }
 .nav li a:hover { background: #00a4e4; color: #fff; margin: -7px -11px; padding: 7px 11px; text-decoration: underline; }
 .nav .active a { color: #00a4e4; border-color: #d1e9f8; }
 
-.contact-phone, .footer .contact-phone_sm { font-size: 24px; color: #acafb1; font-family: "Segoe UI", Arial, sans-serif; font-weight: normal; line-height: 1; }
+.contact-phone, .footer .contact-phone_sm { font-size: 24px; color: #acafb1; font-weight: normal; line-height: 1; }
 .contact-phone span, .footer .contact-phone_sm span { color: #29292a; }
 
 .banner, .banner_sub { background: #2a3952; height: 316px; margin-bottom: 12px; overflow: hidden; position: relative; }
 .banner .in, .banner_sub .in { position: relative; padding-top: 47px; }
-.banner strong, .banner_sub strong { color: #fff; font-size: 81px; font-family: "Segoe UI", Arial, sans-serif; font-weight: normal; font-weight: lighter; line-height: 0.8; margin: 0 0 35px -7px; display: block; min-height: 114px; }
+.banner strong, .banner_sub strong { color: #fff; font-size: 81px; font-family: Segoe_l; line-height: 0.8; margin: 0 0 35px -7px; display: block; min-height: 114px; font-weight: lighter; }
 .banner strong a, .banner_sub strong a { text-decoration: none; color: #fff; }
-.banner p, .banner_sub p { border-left: 3px solid #00a4e4; line-height: 35px; font-size: 18px; font-family: "Segoe UI", Arial, sans-serif; font-weight: bold; color: #fff; padding-left: 9px; text-transform: uppercase; }
+.banner p, .banner_sub p { border-left: 3px solid #00a4e4; line-height: 35px; font-size: 18px; font-family: Segoe_b; color: #fff; padding-left: 9px; font-weight: normal; text-transform: uppercase; }
 .banner p a, .banner_sub p a { text-decoration: none; color: #fff; }
 .banner p a:hover, .banner_sub p a:hover { text-decoration: underline; }
 .banner .banner__img, .banner_sub .banner__img { position: absolute; margin-left: -1033px; left: 50%; }
-.banner .title-arr, .banner_sub .title-arr { position: absolute; background: url('../img/icons-s34db1907ee.png') 0 -1344px no-repeat; width: 44px; height: 45px; top: 4px; left: -70px; }
+.banner .title-arr, .banner_sub .title-arr { position: absolute; background: url('../img/icons-s0a2c45dfb9.png') 0 -1344px no-repeat; width: 44px; height: 45px; top: 13px; left: -67px; }
 
-.banner_sub strong { font-size: 60px; margin-top: 17px; position: relative; }
-.banner_sub p { font-size: 15px; line-height: 32px; padding-left: 20px; }
+.banner_sub strong { font-size: 60px; margin: 7px 0 28px -7px; position: relative; line-height: 1.08; }
+.banner_sub p { font-size: 15px; line-height: 18px; padding: 6px 0 7px 20px; }
 
-.banner__links { position: absolute; width: 316px; top: 0; right: 10px; }
+.banner__links { position: absolute; width: 316px; top: 0; right: 0; }
 .banner__links li { margin-top: 20px; list-style: none; font-size: 18px; color: #00a4e4; }
 .banner__links a { border: 3px solid #00a4e4; width: 270px; padding: 10px 20px; height: 52px; text-decoration: none; display: block; position: relative; }
 .banner__links a:hover { color: #fff; border-color: #fff; }
-.banner__links a:hover .arr-right { background: url('../img/icons-s34db1907ee.png') 0 -1814px no-repeat; width: 23px; height: 39px; }
-.banner__links .arr-right { position: absolute; top: 50%; margin-top: -19px; right: 14px; background: url('../img/icons-s34db1907ee.png') 0 -1621px no-repeat; width: 23px; height: 39px; }
+.banner__links a:hover .arr-right { background: url('../img/icons-s0a2c45dfb9.png') 0 -1814px no-repeat; width: 23px; height: 39px; }
+.banner__links .arr-right { position: absolute; top: 50%; margin-top: -19px; right: 14px; background: url('../img/icons-s0a2c45dfb9.png') 0 -1621px no-repeat; width: 23px; height: 39px; }
 
 .in { margin: 0 auto; width: 988px; }
-@media only screen and (min-width: 1418px) { .in { width: 1324px; } }
+@media only screen and (min-width: 1438px) { .in { width: 1324px; } }
 
 .main { margin: 0 auto; width: 988px; }
-@media only screen and (min-width: 1418px) { .main { width: 1324px; } }
-.main h1 { color: #29292a; font-family: "Segoe UI", Arial, sans-serif; font-size: 35px; font-weight: normal; font-weight: lighter; margin: 0 0 0 -12px; line-height: 1; }
+@media only screen and (min-width: 1438px) { .main { width: 1324px; } }
+.main h1 { color: #29292a; font-family: Segoe_l; font-weight: lighter; font-size: 35px; margin: 0 0 0 -12px; line-height: 1; }
 .main h1 a { text-decoration: none; color: #29292a; display: inline-block; padding: 1px 10px 6px; }
 .main h1 a:hover { background: #00a4e4; color: #fff; }
-.main h3 { font-size: 16px; color: #00a4e4; text-transform: uppercase; font-weight: lighter; margin-bottom: 12px; }
+.main h2 { color: #29292a; font-size: 26px; font-weight: normal; }
+.main h3 { font-size: 16px; color: #00a4e4; text-transform: uppercase; font-family: Segoe; font-weight: normal; margin-bottom: 12px; }
 .main h3 a { text-decoration: underline; }
 .main h3 a:hover { text-decoration: none; }
+.main h4 { color: #363636; font-size: 17px; font-family: Segoe_sb; font-weight: normal; }
+
+.text-block { padding: 10px 0 0; }
+.text-block h1, .text-block h2 { margin: 20px 0; }
+.text-block h3 { margin: 23px 0; }
+.text-block h4 { margin: 17px 0; }
+.text-block p { margin: 20px 0; }
+.text-block figure { margin: 30px 0; }
+.text-block figure img { vertical-align: top; }
+.text-block figure figcaption { display: block; text-align: center; font-size: 13px; font-family: Segoe_i; color: #959ca1; margin: 13px 0 0; }
+.text-block ul { color: #959ca1; padding-left: 38px; }
+.text-block ul li { list-style: none; position: relative; margin: 22px 0; }
+.text-block ul li:before { height: 5px; width: 5px; background: #d1d6da; content: ""; position: absolute; top: 9px; left: -12px; }
+
+.note { float: left; width: 150px; margin-left: -34.4%; font-family: Segoe_b; color: #29292a; text-align: right; width: 31%; }
+
+.mark-text, .text-block blockquote { background: #dbdfe3; color: #29292a; padding: 20px 27px; margin: 20px 0; }
+
+.t, .text-block table { width: 100%; border-spacing: 0; border-collapse: separate; }
+.t th, .text-block table th { background: #dbdfe3; color: #363636; border-bottom: 1px solid #abb3bc; font-weight: normal; text-align: left; padding: 10px 15px; }
+.t td, .text-block table td { border-bottom: 1px solid #dbdfe3; padding: 10px 15px; }
+.t tr:hover td, .text-block table tr:hover td { background-color: #f6f6f6; }
+.t .t_mark td, .text-block table .t_mark td { background-color: #959ca1; }
+.t a, .text-block table a { text-decoration: none; }
+.t a:hover, .text-block table a:hover { text-decoration: underline; }
+
+.form, .text-block form { margin: 27px 0; }
+.form .row, .text-block form .row { display: inline-block; width: 100%; margin-bottom: 11px; }
+.form label, .text-block form label { float: left; text-align: right; color: #959ca1; font-size: 13px; width: 158px; margin: 5px 12px 5px 0; letter-spacing: 0.05em; }
+.form .input, .text-block form .input, .form .input_b, .text-block form .form .input_b, .form .text-block form .input_b, .form .text-block form .input_b, .text-block form .form .input_b, .text-block form .input_b, .form .input_textarea, .text-block form .form .input_textarea, .form .text-block form .input_textarea, .form .text-block form .input_textarea, .text-block form .form .input_textarea, .text-block form .input_textarea { float: left; padding: 0 13px; height: 26px; width: 286px; border: 2px solid #959ca1; color: #959ca1; font-size: 13px; }
+.form .input:focus, .text-block form .input:focus, .form .input_b:focus, .text-block form .form .input_b:focus, .form .text-block form .input_b:focus, .form .text-block form .input_b:focus, .text-block form .form .input_b:focus, .text-block form .input_b:focus, .form .input_textarea:focus, .text-block form .form .input_textarea:focus, .form .text-block form .input_textarea:focus, .form .text-block form .input_textarea:focus, .text-block form .form .input_textarea:focus, .text-block form .input_textarea:focus, .form .input:hover, .text-block form .input:hover, .form .input_b:hover, .text-block form .form .input_b:hover, .form .text-block form .input_b:hover, .form .text-block form .input_b:hover, .text-block form .form .input_b:hover, .text-block form .input_b:hover, .form .input_textarea:hover, .text-block form .form .input_textarea:hover, .form .text-block form .input_textarea:hover, .form .text-block form .input_textarea:hover, .text-block form .form .input_textarea:hover, .text-block form .input_textarea:hover { color: #00a4e4; border-color: #00a4e4; }
+.form .input_b, .text-block form .input_b { font-weight: bold; }
+.form .input_textarea, .text-block form .input_textarea { height: 94px; padding: 11px 13px; resize: none; font-family: Segoe; }
 
 .footer { border-top: 1px solid #dcdedf; margin: 0 auto; width: 988px; padding: 21px 0 167px; }
-@media only screen and (min-width: 1418px) { .footer { width: 1324px; } }
+@media only screen and (min-width: 1438px) { .footer { width: 1324px; } }
 .footer .footer__top { display: inline-block; width: 100%; margin-bottom: 63px; }
 .footer .footer__nav { float: left; }
 .footer .footer__nav li { display: inline-block; list-style: none; font-size: 13px; margin-right: 43px; }
 .footer .footer__nav a { color: #29292a; }
 .footer .footer__top-link { float: right; text-decoration: none; border-bottom: 1px dotted; position: relative; font-size: 13px; margin-top: 2px; }
 .footer .footer__top-link:hover { border-color: transparent; }
-.footer .arr-top { background: url('../img/icons-s34db1907ee.png') 0 -1748px no-repeat; width: 17px; height: 17px; display: block; position: absolute; left: -25px; top: 0; }
+.footer .arr-top { background: url('../img/icons-s0a2c45dfb9.png') 0 -1748px no-repeat; width: 17px; height: 17px; display: block; position: absolute; left: -25px; top: 0; }
 .footer .footer__bottom { display: inline-block; width: 100%; }
 .footer .footer__left { float: left; font-size: 13px; }
 .footer .footer__left span { display: block; margin-bottom: 4px; }
@@ -77,5 +124,5 @@ header, nav, footer { display: block; }
 .footer .footer__right p { font-size: 11px; color: #959ca1; }
 .footer .dotted { border-bottom: 1px dotted #dcdedf; }
 
-.logo-gray { background: url('../img/icons-s34db1907ee.png') 0 -402px no-repeat; width: 214px; height: 20px; display: inline-block; position: relative; top: -6px; margin-bottom: 24px; }
+.logo-gray { background: url('../img/icons-s0a2c45dfb9.png') 0 -402px no-repeat; width: 214px; height: 20px; display: inline-block; position: relative; top: -6px; margin-bottom: 24px; }
 .logo-gray a { display: block; height: 100%; }

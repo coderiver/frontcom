@@ -1,28 +1,47 @@
 @import "base";
-// =======Sprites
-// .whatever{
-// 	@include sized-sprite($icons, badge_hit);
-// 	@include retina{
-// 		@include sized-sprite($icons, badge_new);
-// 	}
-// }
-// =======animation example
-// @include keyframes(rotate) {
-//    from {
-//       @include rotate(0);
-//    }
-//    to {
-//       @include rotate(360);
-//    }
-// }
-// body:hover{
-// 	@include animation(rotate 200s linear infinite);
-// }
-// ========gradient example
-// body{
-// @include background-image(linear-gradient(#232323, #5c5c5c));
-// }
-$segoe : "Segoe UI", Arial, sans-serif;
+@font-face {
+	font-family: 'Segoe';
+	src: url('fonts/segoeui.eot');
+	src: local('☺'), url('fonts/segoeui.woff') format('woff'), url('fonts/segoeui.ttf') format('truetype'), url('fonts/segoeui.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Segoe_b';
+	src: url('fonts/segoeuib.eot');
+	src: local('☺'), url('fonts/segoeuib.woff') format('woff'), url('fonts/segoeuib.ttf') format('truetype'), url('fonts/segoeuib.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Segoe_i';
+	src: url('fonts/segoeuii.eot');
+	src: local('☺'), url('fonts/segoeuii.woff') format('woff'), url('fonts/segoeuii.ttf') format('truetype'), url('fonts/segoeuii.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Segoe_l';
+	src: url('fonts/segoeuil.eot');
+	src: local('☺'), url('fonts/segoeuil.woff') format('woff'), url('fonts/segoeuil.ttf') format('truetype'), url('fonts/segoeuil.svg') format('svg');
+	font-weight: lighter;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Segoe_bi';
+	src: url('fonts/segoeuiz.eot');
+	src: local('☺'), url('fonts/segoeuiz.woff') format('woff'), url('fonts/segoeuiz.ttf') format('truetype'), url('fonts/segoeuiz.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Segoe_sb';
+	src: url('fonts/seguisb.eot');
+	src: local('☺'), url('fonts/seguisb.woff') format('woff'), url('fonts/seguisb.ttf') format('truetype'), url('fonts/seguisb.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
 $blue : #00a4e4;
 $gray : #29292a;
 %block{margin-bottom: 60px;}
@@ -30,7 +49,7 @@ $gray : #29292a;
 *{margin:0;padding:0;-webkit-text-size-adjust: none; }
 body{
 	font: {
-	    family: $segoe;
+	    family: Segoe;
 	    weight: normal;
 	    size: 14px;
 	  	}
@@ -73,7 +92,6 @@ header, nav, footer{display: block;}
 .nav{
 	display: inline-block;
 	width: 100%;
-	font-family: $segoe;
 	padding:48px 0 25px;
 	clear: both;
 	li{
@@ -105,7 +123,6 @@ header, nav, footer{display: block;}
 .contact-phone{
 	font-size: 24px;
 	color: #acafb1;
-	font-family: $segoe;
 	font-weight: normal;
 	line-height:1; 
 	span{
@@ -116,7 +133,6 @@ header, nav, footer{display: block;}
 .banner{
 	background: #2a3952;
 	height: 316px;
-	//padding:47px 0 0;
 	margin-bottom: 12px;
 	overflow: hidden;
 	position: relative;
@@ -127,13 +143,12 @@ header, nav, footer{display: block;}
 	strong{
 		color: #fff;
 		font-size: 81px;
-		font-family: $segoe;
-		font-weight: normal;
-		font-weight: lighter;
+		font-family: Segoe_l;
 		line-height: 0.8;
 		margin: 0 0 35px -7px;
 		display: block;
-		min-height: 114px; 
+		min-height: 114px;
+		font-weight: lighter;
 		a{
 			text-decoration: none;
 			color:#fff;
@@ -143,10 +158,10 @@ header, nav, footer{display: block;}
 		border-left:3px solid $blue;
 		line-height: 35px;
 		font-size: 18px;
-		font-family: $segoe;
-		font-weight: bold;
+		font-family: Segoe_b;
 		color: #fff;
 		padding-left:9px;
+		font-weight: normal;
 		text-transform: uppercase;
 		a{
 			text-decoration: none;
@@ -162,28 +177,29 @@ header, nav, footer{display: block;}
 	.title-arr{
 		position: absolute;
 		@include sized-sprite($icons, 'arr-left5');
-		top:4px;
-		left: -70px;
+		top:13px;
+		left: -67px;
 	}
 }
 .banner_sub{
 	@extend .banner;
 	strong{
 		font-size: 60px;
-		margin-top: 17px;
+		margin: 7px 0 28px -7px;
 		position: relative;
+		line-height: 1.08;
 	}
 	p{
 		font-size: 15px;
-		line-height: 32px;
-		padding-left: 20px;
+		line-height: 18px;
+		padding: 6px 0 7px 20px;
 	}
 }
 .banner__links{
 	position: absolute;
 	width: 316px;
 	top:0;
-	right: 10px;
+	right:0;
 
 	li{
 		margin-top: 20px;
@@ -232,10 +248,9 @@ header, nav, footer{display: block;}
 	}
 	h1{
 		color: $gray;
-		font-family: $segoe;
-		font-size: 35px;
-		font-weight: normal;
+		font-family: Segoe_l;
 		font-weight: lighter;
+		font-size: 35px;
 		margin:0 0 0 -12px; 
 		line-height: 1;
 		a{
@@ -249,20 +264,153 @@ header, nav, footer{display: block;}
 			}
 		}
 	}
-	h2{}
+	h2{
+		color: #29292a;
+		font-size: 26px;
+		font-weight: normal;
+	}
 	h3{
 		font-size:16px;
 		color:$blue;
 		text-transform: uppercase;
-		font-weight: lighter;
+		font-family: Segoe; 
+		font-weight: normal;
 		margin-bottom: 12px;
 		a{
 			text-decoration: underline;
 			&:hover{text-decoration: none;}
 		}
 	}
+	h4{
+		color: #363636;
+		font-size: 17px;
+		font-family: Segoe_sb;
+		font-weight: normal;
+	}
+}
+.text-block{
+	padding:10px 0 0; 
+	h1,h2{margin:20px 0;}
+	h3{margin:23px 0;}
+	h4{margin:17px 0; }
+	p{margin:20px 0;}
+	figure{
+		margin:30px 0; 
+		img{vertical-align: top;}
+		figcaption{
+			display: block;
+			text-align: center;
+			font-size: 13px;
+			font-family:Segoe_i;
+			color:#959ca1;
+			margin: 13px 0 0; 
+		}
+	}
+	ul{
+		color: #959ca1;
+		padding-left:38px;
+		li{
+			list-style: none;
+			position: relative;
+			margin: 22px 0;
+			&:before{
+				height: 5px;
+				width: 5px;
+				background: #d1d6da;
+				content:"";
+				position: absolute;
+				top:9px;
+				left:-12px;
+			}
+		}
+	}
+	blockquote{@extend .mark-text}
+	table {@extend .t;}
+	form{@extend .form;}
+}
+.note{
+	float: left;
+	width: 150px;
+	margin-left:-34.4%;
+	font-family:Segoe_b;
+	color: #29292a;
+	text-align: right;
+	width: 31%;
+}
+.mark-text{
+	background: #dbdfe3;
+	color: #29292a;
+	padding: 20px 27px;
+	margin:20px 0; 
 }
 
+.t{
+	width: 100%;
+	border-spacing: 0;
+	border-collapse: separate;
+	th{
+		background: #dbdfe3;
+		color: #363636;
+		border-bottom: 1px solid #abb3bc;
+		font-weight: normal;
+		text-align: left;
+		padding:10px 15px;
+	}
+	td{
+		border-bottom: 1px solid #dbdfe3;
+		padding:10px 15px;
+	}
+	tr:hover td{
+		background-color: #f6f6f6; 
+	}
+	.t_mark td{background-color: #959ca1; }
+	a{
+		text-decoration: none;
+		&:hover{text-decoration: underline;}
+	}
+}
+
+.form{
+	margin: 27px 0;
+	.row{
+		display: inline-block;
+		width: 100%;
+		margin-bottom: 11px;
+	}
+	label{
+		float: left;
+		text-align: right;
+		color: #959ca1; 
+		font-size: 13px;
+		width: 158px;
+		margin: 5px 12px 5px 0;
+		letter-spacing: 0.05em;
+	}
+	.input{
+		float: left;
+		padding:0 13px;
+		height: 26px;
+		width: 286px;
+		border: 2px solid #959ca1;
+		color: #959ca1;
+		font-size: 13px;
+		&:focus, &:hover{
+			color: $blue;
+			border-color:$blue;  
+		}
+	}
+	.input_b{
+		@extend .input;
+		font-weight: bold;
+	}
+	.input_textarea{
+		@extend .input;
+		height: 94px;
+		padding:11px 13px;
+		resize: none;
+		font-family: Segoe;  
+	}
+}
 .footer{
 	border-top:1px solid #dcdedf;
 	margin: 0 auto;
