@@ -159,7 +159,7 @@
 		margin-right: 27px;
 		}
 	a{
-		font-family: Segoe_l; 
+		font-family: "Segoe UI Light", Arial, sans-serif; 
 		color: #fff;
 		font-size: 32px;
 		vertical-align: middle;
@@ -215,7 +215,8 @@
 		text-transform: uppercase;
 		font-size:19px;
 		color: #c4cacf;
-		font-weight: lighter;
+		font-family: "Segoe UI Light", Arial, sans-serif;
+		font-weight: normal;
 		line-height:1; 
 		span{
 			display: block;
@@ -275,7 +276,8 @@
 		h2{
 			font-size: 21px;
 			color: #fff;
-			font-weight: lighter;
+			font-family: "Segoe UI Light", Arial, sans-serif;
+			font-weight: normal;
 			margin:0 0 30px !important;
 			line-height: 1.15;
 			a{color: #fff;}
@@ -467,7 +469,7 @@
 	}
 	.company-phone{
 		color: #959ca1;
-		font-family: Segoe_b;
+		font-family: "Segoe UI Bold", Arial, sans-serif;
 		font-weight: normal; 
 	}
 	.add-inf{
