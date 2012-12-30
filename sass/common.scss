@@ -525,7 +525,7 @@ button%btn{
 	width:229px;
 }
 %btn_sm{
-	@extend .btn;
+	@extend %btn;
 	font-size: 13px;
 	height:28px;
 	line-height: 28px;
@@ -587,4 +587,109 @@ button%btn_sm{
 .btn_gw_sm{
 	@extend %btn_sm;
 	&:before{@include sized-sprite($icons, 'btn-arr-g-s');}
+}
+%icon{
+	display:inline-block;
+	margin-right:14px;
+	cursor:pointer;
+	vertical-align:middle;
+	&:hover{opacity:.35;}
+}
+.icon-doc{
+	@extend %icon;
+	@include sized-sprite($icons, 'icon-doc');
+}
+.icon-pdf{
+	@extend %icon;
+	@include sized-sprite($icons, 'icon-pdf');
+}
+.icon-ppt{
+	@extend %icon;
+	@include sized-sprite($icons, 'icon-ppt');
+}
+.icon-xls{
+	@extend %icon;
+	@include sized-sprite($icons, 'icon-xls');
+}
+.icon-left{
+	@extend %icon;
+	@include sized-sprite($icons, 'icon-left');
+	margin-right:5px;
+}
+.icon-bottom{
+	@extend %icon;
+	@include sized-sprite($icons, 'icon-bottom');
+	margin-right:5px;
+}
+.icon-d{
+	@extend %icon;
+	@include sized-sprite($icons, 'icon-d');
+}
+.icon-doc_a{
+	@extend %icon;
+	@include sized-sprite($icons, 'icon-doc1');
+}
+.icon-pdf_a{
+	@extend %icon;
+	@include sized-sprite($icons, 'icon-pdf1');
+}
+.icon-ppt_a{
+	@extend %icon;
+	@include sized-sprite($icons, 'icon-ppt1');
+}
+.icon-xls_a{
+	@extend %icon;
+	@include sized-sprite($icons, 'icon-xls1');
+}
+.icon-left_a{
+	@extend %icon;
+	@include sized-sprite($icons, 'icon-left1');
+	margin-right:5px;
+}
+.icon-bottom_a{
+	@extend %icon;
+	@include sized-sprite($icons, 'icon-bottom1');
+	margin-right:5px;
+}
+.icon-d_a{
+	@extend %icon;
+	@include sized-sprite($icons, 'icon-d1');
+}
+.doc-linc{
+	span{
+		vertical-align:middle;
+		font-size:12px;
+		display: inline-block;
+		color:#959ca1;
+	}
+	a{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	&:hover{
+		opacity:.35;
+	}
+	.icon-d,.icon-d_a{
+		&:hover{opacity:1;}
+	}
+}
+.doc-linc_a{
+	@extend .doc-linc;
+	a{color:#959ca1;}
+}
+
+.adv{
+	.adv__img{
+		img{vertical-align:top;}
+	}
+	.adv__inf{
+		background:$blue;
+		padding:24px;
+		font-size:20px;
+		padding: 10px 24px 22px;
+		line-height:1.2;
+		a{
+			color:#fff;
+		}
+	}
 }

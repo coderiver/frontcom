@@ -1,9 +1,9 @@
 /*
 Syntax error: Undefined variable: "$blue".
-        on line 24 of C:/Users/Magi/Documents/GitHub/frontcom/sass/main.scss
+        on line 24 of c:/Users/Magi/Documents/GitHub/frontcom/sass/main.scss
 
 Backtrace:
-C:/Users/Magi/Documents/GitHub/frontcom/sass/main.scss:24
+c:/Users/Magi/Documents/GitHub/frontcom/sass/main.scss:24
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/script/variable.rb:49:in `_perform'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/script/node.rb:40:in `perform'
 C:/Ruby193/lib/ruby/gems/1.9.1/gems/sass-3.2.1/lib/sass/script/list.rb:70:in `block in _perform'
@@ -108,4 +108,4 @@ C:/Ruby193/bin/compass:23:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$blue\".\A         on line 24 of C:/Users/Magi/Documents/GitHub/frontcom/sass/main.scss"; }
+  content: "Syntax error: Undefined variable: \"$blue\".\A         on line 24 of c:/Users/Magi/Documents/GitHub/frontcom/sass/main.scss"; }
