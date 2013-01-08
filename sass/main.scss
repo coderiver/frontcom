@@ -319,7 +319,7 @@
 
 
 .accos{
-	margin: 40px 0 100px -10px;
+	margin: 40px 0 0 -10px;
 	border-right: 2px solid #d2d7db;
 	li{
 		margin-bottom: 4px;
@@ -347,6 +347,7 @@
 .accos__lvl-2 {
 	padding: 5px 0 0 30px;
 	li{
+		@include respond-to(pda){width: 100% !important;}
 		margin-bottom: 7px;
 		&.active {
 			a {

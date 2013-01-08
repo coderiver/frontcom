@@ -203,6 +203,7 @@ button.btn_b_sm, button.btn_bw_sm, button.btn_g_sm, button.btn_gw_sm { height: 3
 
 .doc-linc_a a { color: #959ca1; }
 
+.adv { margin-top: 100px; }
 .adv .adv__img img { vertical-align: top; }
 @media only screen and (max-width: 1100px) { .adv .adv__img img { width: 100%; } }
 .adv .adv__inf { background: #00a4e4; padding: 24px; font-size: 20px; padding: 10px 24px 22px; line-height: 1.2; }
