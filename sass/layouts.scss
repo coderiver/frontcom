@@ -21,4 +21,11 @@
 		float:left;
 		width: 23.5%;
 	}
+	@include respond-to(pda){
+		.l-col2, .l-col1, .l-col2_b, .l-col1_b{
+			float: none;
+			width: 100%;
+			margin-bottom: 55px;
+		}
+	}
 }

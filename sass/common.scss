@@ -87,12 +87,12 @@ header, nav, footer{display: block;}
 .nav{
 	display: inline-block;
 	width: 100%;
-	padding:48px 0 25px;
+	padding:32px 0 9px; 
 	clear: both;
 	li{
 		list-style: none;
 		float: left;
-		margin-right: 27px;
+		margin: 16px 27px 16px 0;
 		a{
 			display: block;
 			color: $gray;
@@ -300,6 +300,9 @@ header, nav, footer{display: block;}
 			color:#959ca1;
 			margin: 13px 0 0; 
 		}
+		@include respond-to(norm){
+			img{width: 100%;}
+		}
 	}
 	ul{
 		color: #959ca1;
@@ -331,6 +334,9 @@ header, nav, footer{display: block;}
 	color: #29292a;
 	text-align: right;
 	width: 31%;
+	@include respond-to(pda){
+		display: none;
+	}
 }
 .mark-text{
 	background: #dbdfe3;
@@ -511,12 +517,20 @@ header, nav, footer{display: block;}
 	margin:5px 0;
 	text-align:left;
 	position:relative;
+	text-decoration: none;
 	&:hover{opacity:.35}
 	&:before{
 		content:"";
 		position:absolute;
 		top:7px;
 		left:12px;
+	}
+}
+.btn-holder{
+	text-align: center;
+	%btn{
+		display: inline-block;
+		padding-right: 10px;
 	}
 }
 button%btn{

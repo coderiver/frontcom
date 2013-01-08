@@ -4,3 +4,4 @@
 .l .l-col1 { float: right; width: 32%; }
 .l .l-col2_b { float: right; width: 74.5%; }
 .l .l-col1_b { float: left; width: 23.5%; }
+@media only screen and (max-width: 650px) { .l .l-col2, .l .l-col1, .l .l-col2_b, .l .l-col1_b { float: none; width: 100%; margin-bottom: 55px; } }

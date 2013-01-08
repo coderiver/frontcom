@@ -1,11 +1,19 @@
 @import "compass/css3";
 
 // responsive
-$break-small: 500px;
+$break-small: 650px;
+$break-normal: 1100px;
 $break-large: 1438px;
+$break-banner:1000px;
 @mixin respond-to($media) {
   @if $media == pda {
     @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == ban {
+    @media only screen and (max-width: $break-banner) { @content; }
+  }
+  @else if $media == norm {
+    @media only screen and (max-width: $break-normal) { @content; }
   }
   @else if $media == wide {
     @media only screen and (min-width: $break-large) { @content; }
