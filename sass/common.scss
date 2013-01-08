@@ -694,7 +694,10 @@ button%btn_sm{
 
 .adv{
 	.adv__img{
-		img{vertical-align:top;}
+		img{
+			vertical-align:top;
+			@include respond-to(norm){width: 100%;}
+		}
 	}
 	.adv__inf{
 		background:$blue;
