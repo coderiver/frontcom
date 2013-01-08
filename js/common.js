@@ -11,20 +11,23 @@ $(document).ready(function() {
 	//	circular:true
 	//});
 
+$(window).load(function() {
 
-	$('#clients .slider__slides').carouFredSel({
-		width: '100%',
-		auto: false,
-		prev: '#clients .slider__prev',
-		next: '#clients .slider__next'
-	});
+		$('#clients .slider__slides').carouFredSel({
+			width: '100%',
+			auto: false,
+			prev: '#clients .slider__prev',
+			next: '#clients .slider__next'
+		});
 
-	$('#progects .slider__slides').carouFredSel({
-		width: '100%',
-		auto: false,
-		prev: '#progects .slider__prev',
-		next: '#progects .slider__next'
-	});
+		$('#progects .slider__slides').carouFredSel({
+			width: '100%',
+			auto: false,
+			prev: '#progects .slider__prev',
+			next: '#progects .slider__next'
+		});
+});
+
 
 
 });
